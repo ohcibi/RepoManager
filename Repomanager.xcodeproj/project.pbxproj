@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E22B61DC18EECFDB0006BC35 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E22B61DB18EECFDB0006BC35 /* Cocoa.framework */; };
+		E22B61E618EECFDB0006BC35 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E22B61E418EECFDB0006BC35 /* InfoPlist.strings */; };
+		E22B61E818EECFDB0006BC35 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E22B61E718EECFDB0006BC35 /* main.m */; };
+		E22B61EC18EECFDB0006BC35 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E22B61EA18EECFDB0006BC35 /* Credits.rtf */; };
+		E22B61EF18EECFDB0006BC35 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E22B61EE18EECFDB0006BC35 /* AppDelegate.m */; };
+		E22B61F218EECFDB0006BC35 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E22B61F018EECFDB0006BC35 /* MainMenu.xib */; };
+		E22B61F418EECFDB0006BC35 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E22B61F318EECFDB0006BC35 /* Images.xcassets */; };
+		E22B61FB18EECFDB0006BC35 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E22B61FA18EECFDB0006BC35 /* XCTest.framework */; };
+		E22B61FC18EECFDB0006BC35 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E22B61DB18EECFDB0006BC35 /* Cocoa.framework */; };
+		E22B621218EED0A00006BC35 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E22B621018EED0A00006BC35 /* MainViewController.m */; };
+		E22B621318EED0A00006BC35 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E22B621118EED0A00006BC35 /* MainViewController.xib */; };
+		E22B621718EED35C0006BC35 /* Repository.m in Sources */ = {isa = PBXBuildFile; fileRef = E22B621618EED35C0006BC35 /* Repository.m */; };
+		E268E61418EEFB3800C625AB /* Team.m in Sources */ = {isa = PBXBuildFile; fileRef = E268E61318EEFB3800C625AB /* Team.m */; };
+		E268E61818EFE40400C625AB /* RepositoryDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E268E61718EFE40400C625AB /* RepositoryDataSource.m */; };
+		E268E61B18EFE66000C625AB /* ManagerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E268E61A18EFE66000C625AB /* ManagerDataSource.m */; };
+		E286787518F062C2006CF0C5 /* TeamDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E286787418F062C2006CF0C5 /* TeamDataSource.m */; };
+		F9D8C1863FE049CBB2DD747A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA0329841122461E99B258BB /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E22B61FD18EECFDB0006BC35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E22B61D018EECFDB0006BC35 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E22B61D718EECFDB0006BC35;
+			remoteInfo = Repomanager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		718D26EBC5A34CAF8E60344F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		E22B61D818EECFDB0006BC35 /* Repomanager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Repomanager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E22B61DB18EECFDB0006BC35 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		E22B61DE18EECFDB0006BC35 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		E22B61DF18EECFDB0006BC35 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E22B61E018EECFDB0006BC35 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E22B61E318EECFDB0006BC35 /* Repomanager-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Repomanager-Info.plist"; sourceTree = "<group>"; };
+		E22B61E518EECFDB0006BC35 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E22B61E718EECFDB0006BC35 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E22B61E918EECFDB0006BC35 /* Repomanager-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Repomanager-Prefix.pch"; sourceTree = "<group>"; };
+		E22B61EB18EECFDB0006BC35 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		E22B61ED18EECFDB0006BC35 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E22B61EE18EECFDB0006BC35 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E22B61F118EECFDB0006BC35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		E22B61F318EECFDB0006BC35 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E22B61F918EECFDB0006BC35 /* RepomanagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepomanagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E22B61FA18EECFDB0006BC35 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E22B620F18EED0A00006BC35 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		E22B621018EED0A00006BC35 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		E22B621118EED0A00006BC35 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		E22B621518EED35C0006BC35 /* Repository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Repository.h; sourceTree = "<group>"; };
+		E22B621618EED35C0006BC35 /* Repository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Repository.m; sourceTree = "<group>"; };
+		E268E61218EEFB3800C625AB /* Team.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Team.h; sourceTree = "<group>"; };
+		E268E61318EEFB3800C625AB /* Team.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Team.m; sourceTree = "<group>"; };
+		E268E61618EFE40400C625AB /* RepositoryDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepositoryDataSource.h; sourceTree = "<group>"; };
+		E268E61718EFE40400C625AB /* RepositoryDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepositoryDataSource.m; sourceTree = "<group>"; };
+		E268E61918EFE66000C625AB /* ManagerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerDataSource.h; sourceTree = "<group>"; };
+		E268E61A18EFE66000C625AB /* ManagerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerDataSource.m; sourceTree = "<group>"; };
+		E286787318F062C2006CF0C5 /* TeamDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamDataSource.h; sourceTree = "<group>"; };
+		E286787418F062C2006CF0C5 /* TeamDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamDataSource.m; sourceTree = "<group>"; };
+		EA0329841122461E99B258BB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E22B61D518EECFDB0006BC35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E22B61DC18EECFDB0006BC35 /* Cocoa.framework in Frameworks */,
+				F9D8C1863FE049CBB2DD747A /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E22B61F618EECFDB0006BC35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E22B61FC18EECFDB0006BC35 /* Cocoa.framework in Frameworks */,
+				E22B61FB18EECFDB0006BC35 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E22B61CF18EECFDB0006BC35 = {
+			isa = PBXGroup;
+			children = (
+				E22B61E118EECFDB0006BC35 /* Repomanager */,
+				E22B61DA18EECFDB0006BC35 /* Frameworks */,
+				E22B61D918EECFDB0006BC35 /* Products */,
+				718D26EBC5A34CAF8E60344F /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		E22B61D918EECFDB0006BC35 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E22B61D818EECFDB0006BC35 /* Repomanager.app */,
+				E22B61F918EECFDB0006BC35 /* RepomanagerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E22B61DA18EECFDB0006BC35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E22B61DB18EECFDB0006BC35 /* Cocoa.framework */,
+				E22B61FA18EECFDB0006BC35 /* XCTest.framework */,
+				E22B61DD18EECFDB0006BC35 /* Other Frameworks */,
+				EA0329841122461E99B258BB /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E22B61DD18EECFDB0006BC35 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E22B61DE18EECFDB0006BC35 /* AppKit.framework */,
+				E22B61DF18EECFDB0006BC35 /* CoreData.framework */,
+				E22B61E018EECFDB0006BC35 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		E22B61E118EECFDB0006BC35 /* Repomanager */ = {
+			isa = PBXGroup;
+			children = (
+				E268E61518EFE3D500C625AB /* DataSource */,
+				E22B621418EED3290006BC35 /* Model */,
+				E22B61ED18EECFDB0006BC35 /* AppDelegate.h */,
+				E22B61EE18EECFDB0006BC35 /* AppDelegate.m */,
+				E22B61F018EECFDB0006BC35 /* MainMenu.xib */,
+				E22B61F318EECFDB0006BC35 /* Images.xcassets */,
+				E22B61E218EECFDB0006BC35 /* Supporting Files */,
+				E22B620F18EED0A00006BC35 /* MainViewController.h */,
+				E22B621018EED0A00006BC35 /* MainViewController.m */,
+				E22B621118EED0A00006BC35 /* MainViewController.xib */,
+			);
+			path = Repomanager;
+			sourceTree = "<group>";
+		};
+		E22B61E218EECFDB0006BC35 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E22B61E318EECFDB0006BC35 /* Repomanager-Info.plist */,
+				E22B61E418EECFDB0006BC35 /* InfoPlist.strings */,
+				E22B61E718EECFDB0006BC35 /* main.m */,
+				E22B61E918EECFDB0006BC35 /* Repomanager-Prefix.pch */,
+				E22B61EA18EECFDB0006BC35 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E22B621418EED3290006BC35 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E22B621518EED35C0006BC35 /* Repository.h */,
+				E22B621618EED35C0006BC35 /* Repository.m */,
+				E268E61218EEFB3800C625AB /* Team.h */,
+				E268E61318EEFB3800C625AB /* Team.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E268E61518EFE3D500C625AB /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				E268E61618EFE40400C625AB /* RepositoryDataSource.h */,
+				E268E61718EFE40400C625AB /* RepositoryDataSource.m */,
+				E268E61918EFE66000C625AB /* ManagerDataSource.h */,
+				E268E61A18EFE66000C625AB /* ManagerDataSource.m */,
+				E286787318F062C2006CF0C5 /* TeamDataSource.h */,
+				E286787418F062C2006CF0C5 /* TeamDataSource.m */,
+			);
+			name = DataSource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E22B61D718EECFDB0006BC35 /* Repomanager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E22B620918EECFDB0006BC35 /* Build configuration list for PBXNativeTarget "Repomanager" */;
+			buildPhases = (
+				9863AC8727C64F74A73202BE /* Check Pods Manifest.lock */,
+				E22B61D418EECFDB0006BC35 /* Sources */,
+				E22B61D518EECFDB0006BC35 /* Frameworks */,
+				E22B61D618EECFDB0006BC35 /* Resources */,
+				74C6F99D83CD494480FCAAB8 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Repomanager;
+			productName = Repomanager;
+			productReference = E22B61D818EECFDB0006BC35 /* Repomanager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E22B61F818EECFDB0006BC35 /* RepomanagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E22B620C18EECFDB0006BC35 /* Build configuration list for PBXNativeTarget "RepomanagerTests" */;
+			buildPhases = (
+				E22B61F518EECFDB0006BC35 /* Sources */,
+				E22B61F618EECFDB0006BC35 /* Frameworks */,
+				E22B61F718EECFDB0006BC35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E22B61FE18EECFDB0006BC35 /* PBXTargetDependency */,
+			);
+			name = RepomanagerTests;
+			productName = RepomanagerTests;
+			productReference = E22B61F918EECFDB0006BC35 /* RepomanagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E22B61D018EECFDB0006BC35 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = this.done;
+				TargetAttributes = {
+					E22B61F818EECFDB0006BC35 = {
+						TestTargetID = E22B61D718EECFDB0006BC35;
+					};
+				};
+			};
+			buildConfigurationList = E22B61D318EECFDB0006BC35 /* Build configuration list for PBXProject "Repomanager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E22B61CF18EECFDB0006BC35;
+			productRefGroup = E22B61D918EECFDB0006BC35 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E22B61D718EECFDB0006BC35 /* Repomanager */,
+				E22B61F818EECFDB0006BC35 /* RepomanagerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E22B61D618EECFDB0006BC35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E22B61E618EECFDB0006BC35 /* InfoPlist.strings in Resources */,
+				E22B61F418EECFDB0006BC35 /* Images.xcassets in Resources */,
+				E22B621318EED0A00006BC35 /* MainViewController.xib in Resources */,
+				E22B61EC18EECFDB0006BC35 /* Credits.rtf in Resources */,
+				E22B61F218EECFDB0006BC35 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E22B61F718EECFDB0006BC35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		74C6F99D83CD494480FCAAB8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9863AC8727C64F74A73202BE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E22B61D418EECFDB0006BC35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E268E61418EEFB3800C625AB /* Team.m in Sources */,
+				E22B61EF18EECFDB0006BC35 /* AppDelegate.m in Sources */,
+				E22B621218EED0A00006BC35 /* MainViewController.m in Sources */,
+				E268E61818EFE40400C625AB /* RepositoryDataSource.m in Sources */,
+				E268E61B18EFE66000C625AB /* ManagerDataSource.m in Sources */,
+				E286787518F062C2006CF0C5 /* TeamDataSource.m in Sources */,
+				E22B61E818EECFDB0006BC35 /* main.m in Sources */,
+				E22B621718EED35C0006BC35 /* Repository.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E22B61F518EECFDB0006BC35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E22B61FE18EECFDB0006BC35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E22B61D718EECFDB0006BC35 /* Repomanager */;
+			targetProxy = E22B61FD18EECFDB0006BC35 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E22B61E418EECFDB0006BC35 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E22B61E518EECFDB0006BC35 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E22B61EA18EECFDB0006BC35 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E22B61EB18EECFDB0006BC35 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		E22B61F018EECFDB0006BC35 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E22B61F118EECFDB0006BC35 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E22B620718EECFDB0006BC35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E22B620818EECFDB0006BC35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E22B620A18EECFDB0006BC35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 718D26EBC5A34CAF8E60344F /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Repomanager/Repomanager-Prefix.pch";
+				INFOPLIST_FILE = "Repomanager/Repomanager-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E22B620B18EECFDB0006BC35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 718D26EBC5A34CAF8E60344F /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Repomanager/Repomanager-Prefix.pch";
+				INFOPLIST_FILE = "Repomanager/Repomanager-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E22B620D18EECFDB0006BC35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Repomanager.app/Contents/MacOS/Repomanager";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Repomanager/Repomanager-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RepomanagerTests/RepomanagerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E22B620E18EECFDB0006BC35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Repomanager.app/Contents/MacOS/Repomanager";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Repomanager/Repomanager-Prefix.pch";
+				INFOPLIST_FILE = "RepomanagerTests/RepomanagerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E22B61D318EECFDB0006BC35 /* Build configuration list for PBXProject "Repomanager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E22B620718EECFDB0006BC35 /* Debug */,
+				E22B620818EECFDB0006BC35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E22B620918EECFDB0006BC35 /* Build configuration list for PBXNativeTarget "Repomanager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E22B620A18EECFDB0006BC35 /* Debug */,
+				E22B620B18EECFDB0006BC35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E22B620C18EECFDB0006BC35 /* Build configuration list for PBXNativeTarget "RepomanagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E22B620D18EECFDB0006BC35 /* Debug */,
+				E22B620E18EECFDB0006BC35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E22B61D018EECFDB0006BC35 /* Project object */;
+}
