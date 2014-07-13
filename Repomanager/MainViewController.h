@@ -23,6 +23,8 @@
 - (IBAction)deleteAllRepos:(id)sender;
 - (IBAction)createAllTeams:(id)sender;
 - (IBAction)deleteAllTeams:(id)sender;
+- (IBAction)grantWrite:(id)sender;
+- (IBAction)grantRead:(id)sender;
 
 @property (weak) IBOutlet NSTextField *apiTokenField;
 @property (weak) IBOutlet NSTableView *teamTable;

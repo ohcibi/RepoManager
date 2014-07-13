@@ -164,4 +164,24 @@
         [self.updateProgressIndicator incrementBy:numUpdates];
     }];
 }
+
+- (IBAction)grantWrite:(id)sender {
+    [self.updatingTeamsIndicator startAnimation:self];
+    [self.updateProgressIndicator setDoubleValue:0];
+    self.updateProgressIndicator.maxValue = [self.groupsField intValue] * [self.teamsField intValue];
+    [self.updateProgressIndicator startAnimation:self];
+    [self.teamDataSource grantWrite:^(BOOL success){
+        [self.updatingTeamsIndicator stopAnimation:self];
+    }];
+}
+
+- (IBAction)grantRead:(id)sender {
+    [self.updatingTeamsIndicator startAnimation:self];
+    [self.updateProgressIndicator setDoubleValue:0];
+    self.updateProgressIndicator.maxValue = [self.groupsField intValue] * [self.teamsField intValue];
+    [self.updateProgressIndicator startAnimation:self];
+    [self.teamDataSource grantRead:^(BOOL success){
+        [self.updatingTeamsIndicator stopAnimation:self];
+    }];
+}
 @end

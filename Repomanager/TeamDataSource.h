@@ -13,5 +13,7 @@
 
 -(void)createAllForGroups:(int)numGroups andTeams:(int)numTeams withDone:(void(^)(BOOL success))done andStep:(void(^)(int numRepos))step;
 -(void)deleteAllTeamsWithDone:(void(^)(BOOL success))done andStep:(void(^)(int numTeams))step;
+-(void)grantWrite:(void(^)(BOOL success))done;
+-(void)grantRead:(void(^)(BOOL success))done;
 
 @end

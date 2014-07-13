@@ -80,4 +80,28 @@ objectValueForTableColumn:(NSTableColumn *)tableColumn
     }];
 }
 
+-(void)grantWrite:(void (^)(BOOL))done {
+    [self grant:@"push" withDone:done];
+}
+
+-(void)grantRead:(void (^)(BOOL))done {
+    [self grant:@"pull" withDone:done];
+}
+
+-(void)grant:(NSString *)permission withDone:(void (^)(BOOL))done {
+    [self forAllTeamsDo:^(Team *team, BOOL lastOne) {
+        [self.requestManager
+         PATCH:[NSString stringWithFormat:@"teams/%i", team.id]
+         parameters:@{@"permission": permission} success:^(AFHTTPRequestOperation *operation, id responseObject) {
+             if (lastOne) {
+                 done(YES);
+             }
+         } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+             if (lastOne) {
+                 done(NO);
+             }
+         }];
+    }];
+}
+
 @end

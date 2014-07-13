@@ -5,6 +5,7 @@
 //  Created by Tobias Witt on 05.04.14.
 //  Copyright (c) 2014 this.done. All rights reserved.
 //
+#define PER_PAGE @100
 
 #import "ManagerDataSource.h"
 
@@ -90,17 +91,18 @@ sortDescriptorsDidChange:(NSArray *)oldDescriptors {
 
 -(void)updateSourceForApiCall:(NSString *)call withCreator:(id (^)(NSDictionary *))creator
                    andDone:(void (^)(BOOL success))done {
-    self.source = [[NSArray alloc] init];
+    
+    NSMutableArray * newSource = [NSMutableArray
+                                  arrayWithCapacity:[self.source count]];
+    
     [self requestLink:[NSString stringWithFormat:@"orgs/%@/%@", self.propra, call]
-       withParameters:@{@"per_page": @100}
+       withParameters:@{@"per_page": PER_PAGE}
               success:^(AFHTTPRequestOperation *operation, id response) {
-                  NSMutableArray * newSource = [NSMutableArray arrayWithArray:self.source];
                   for (NSDictionary * item in response) {
                       [newSource addObject:creator(item)];
                   }
                   self.source = [self sortedSourceFromArray:newSource
                                          ascending:[self.tableView.sortDescriptors.firstObject ascending]];
-                  NSLog(@"%d", [self.source count]);
                   done(YES);
               }
               failure:^(AFHTTPRequestOperation *operation, NSError *error) {
@@ -112,7 +114,6 @@ sortDescriptorsDidChange:(NSArray *)oldDescriptors {
 -(void)requestLink:(NSString *)link withParameters:(NSDictionary *)parameters
            success:(void (^)(AFHTTPRequestOperation *operation, id response))success
            failure:(void (^)(AFHTTPRequestOperation *operation, id response))failure {
-    
     [self.requestManager GET:link parameters:parameters
                      success:^(AFHTTPRequestOperation * operation, id response) {
                          success(operation, response);
